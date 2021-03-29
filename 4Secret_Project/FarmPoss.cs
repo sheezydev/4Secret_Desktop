@@ -22,8 +22,8 @@ namespace _4Secret_Project
         private void FarmPoss_Load(object sender, EventArgs e)
         {
             panelDragonrod.BackColor = Color.FromArgb(50, Color.White);
-            
 
+            timer1.Start();
 
         }
 
@@ -124,6 +124,18 @@ namespace _4Secret_Project
             mainTigerasDung.Visible = false;
             mainTigerasCoins.Visible = false;
             mainPirate.Visible = false;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            panelLoad2.Width += 35;
+
+            if (panelLoad2.Width >= panelLoad1.Width)
+            {
+                
+                timer1.Stop();
+                panel9.Visible = false;
+            }
         }
     }
 }

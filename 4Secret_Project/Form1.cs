@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -141,8 +143,20 @@ namespace _4Secret_Project
             else
             {
                 ActivateButton(sender);
+                menuBattleModes.Enabled = false;
+                menuFarm.Enabled = false;
+                menuProfessions.Enabled = false;
+                menuEvents.Enabled = false;
                 Crafts kraft = new Crafts(this);
                 OpenMellekForm(kraft, sender);
+                while (kraft.panelLoad2.Width <= 380)
+                {
+                    kraft.panelLoad2.Width += 1;
+                }
+                menuBattleModes.Enabled = true;
+                menuFarm.Enabled = true;
+                menuProfessions.Enabled = true;
+                menuEvents.Enabled = true;
             }
         }
         private void menuFarm_Click(object sender, EventArgs e)
@@ -162,8 +176,20 @@ namespace _4Secret_Project
             else
             {
                 ActivateButton(sender);
+                menuBattleModes.Enabled = false;
+                menuCrafts.Enabled = false;
+                menuProfessions.Enabled = false;
+                menuEvents.Enabled = false;
                 FarmPoss farm = new FarmPoss(this);
                 OpenMellekForm(farm, sender);
+                while (farm.panelLoad2.Width <= 380)
+                {
+                    farm.panelLoad2.Width += 1;
+                }
+                menuBattleModes.Enabled = true;
+                menuCrafts.Enabled = true;
+                menuProfessions.Enabled = true;
+                menuEvents.Enabled = true;
             }
         }
 
@@ -208,6 +234,18 @@ namespace _4Secret_Project
                 ActivateButton(sender);
                 Professions prof = new Professions(this);
                 OpenMellekForm(prof, sender);
+                menuBattleModes.Enabled = false;
+                menuFarm.Enabled = false;
+                menuCrafts.Enabled = false;
+                menuEvents.Enabled = false;
+                while (prof.panelLoad2.Width <= 380)
+                {
+                    prof.panelLoad2.Width += 1;
+                }
+                menuBattleModes.Enabled = true;
+                menuFarm.Enabled = true;
+                menuCrafts.Enabled = true;
+                menuEvents.Enabled = true;
             }
         }
 
@@ -230,6 +268,28 @@ namespace _4Secret_Project
                 ActivateButton(sender);
                 Events eventek = new Events(this);
                 OpenMellekForm(eventek, sender);
+            }
+        }
+
+        [DllImport("gdi32.dll", EntryPoint = "AddFontResourceW", SetLastError = true)]
+        public static extern int AddFontResource([In][MarshalAs(UnmanagedType.LPWStr)]
+                                         string lpFileName);
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            AddFontResource(Path.GetFullPath(Path.Combine(Application.StartupPath, @"Image\MEPHISTO.TTF")));
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            DisableButton();
+            FormCollection fc = Application.OpenForms;
+            foreach (Form frm in fc)
+            {
+                if (frm.Name == "Battlemodes" || frm.Name == "Crafts" || frm.Name == "FarmPoss" || frm.Name == "Events" || frm.Name == "Professions")
+                {
+                    frm.Hide();
+                }
             }
         }
     }

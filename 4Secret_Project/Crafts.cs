@@ -25,13 +25,13 @@ namespace _4Secret_Project
             {
                 new CraftItems { Name = "Ekim Orc Rod" , Category = "Rod" , Level  = "36" , Ingot1 = 180, Ingot2 = 180 , Ingot3 = 180 , Ingot4  = 180 , MithrilOrWeapon = "Mithril" , MithrilOrWeaponAmount = 50, Osiris =32 , Wellwater=4 , Waterofworld = 20},
                 new CraftItems { Name = "Book of Shadows" , Category = "Book" , Level  = "36"  , Ingot1 = 45, Ingot2 = 45 , Ingot3 = 45 , Ingot4  = 45 , MithrilOrWeapon = "Mithril" , MithrilOrWeaponAmount = 12, Osiris =8 , Wellwater=1 , Waterofworld = 5},
-                new CraftItems { Name = "Succubus Queen's Wand" , Category = "Wand" , Level  = "36"  , Ingot1 = 135, Ingot2 = 135 , Ingot3 = 135 , Ingot4  = 135 , MithrilOrWeapon = "Mithril" ,MithrilOrWeaponAmount = 38, Osiris =8 , Wellwater=4 , Waterofworld = 15},
-                new CraftItems { Name = "Lapiris' Mercy" , Category = "Crossbow" , Level  = "36"  , Ingot1 = 180, Ingot2 = 180 , Ingot3 = 180 , Ingot4  = 180 , MithrilOrWeapon = "Mithril" ,MithrilOrWeaponAmount = 50, Osiris =20 , Wellwater=4 , Waterofworld = 20},
-                new CraftItems { Name = "Little Muray's Two-Handed Hammer" , Category = "Axe" , Level = "36", Ingot1 = 180, Ingot2 = 180 , Ingot3 = 180 , Ingot4  = 180 , MithrilOrWeapon = "Mithril" , MithrilOrWeaponAmount = 50, Osiris =20 , Wellwater=4 , Waterofworld = 20},
-                new CraftItems { Name = "Night Bringer" , Category = "Chakram" , Level  = "36"  , Ingot1 = 180, Ingot2 = 180 , Ingot3 = 180 , Ingot4  = 180 , MithrilOrWeapon = "Mithril" , MithrilOrWeaponAmount = 50, Osiris =20 , Wellwater=4 , Waterofworld = 20},
+                new CraftItems { Name = "Succubus Queen's Wand" , Category = "Wand" , Level  = "36"  , Ingot1 = 135, Ingot2 = 135 , Ingot3 = 135 , Ingot4  = 135 , MithrilOrWeapon = "Mithril" ,MithrilOrWeaponAmount = 38, Osiris =24 , Wellwater=4 , Waterofworld = 15},
+                new CraftItems { Name = "Lapiris' Mercy" , Category = "Crossbow" , Level  = "36"  , Ingot1 = 180, Ingot2 = 180 , Ingot3 = 180 , Ingot4  = 180 , MithrilOrWeapon = "Mithril" ,MithrilOrWeaponAmount = 50, Osiris =32 , Wellwater=4 , Waterofworld = 20},
+                new CraftItems { Name = "Little Muray's Two-Handed Hammer" , Category = "Axe" , Level = "36", Ingot1 = 180, Ingot2 = 180 , Ingot3 = 180 , Ingot4  = 180 , MithrilOrWeapon = "Mithril" , MithrilOrWeaponAmount = 50, Osiris =32 , Wellwater=4 , Waterofworld = 20},
+                new CraftItems { Name = "Night Bringer" , Category = "Chakram" , Level  = "36"  , Ingot1 = 180, Ingot2 = 180 , Ingot3 = 180 , Ingot4  = 180 , MithrilOrWeapon = "Mithril" , MithrilOrWeaponAmount = 50, Osiris =32 , Wellwater=4 , Waterofworld = 20},
                 new CraftItems { Name = "Pirate's Shortsword" , Category = "Dagger" , Level  = "36"  , Ingot1 = 45, Ingot2 = 45 , Ingot3 = 45 , Ingot4  = 45 , MithrilOrWeapon = "Mithril" , MithrilOrWeaponAmount = 12, Osiris =8 , Wellwater=1 , Waterofworld = 5},
                 new CraftItems { Name = "Shield of Shadows" , Category = "Shield" , Level  = "36"  , Ingot1 = 45, Ingot2 = 45 , Ingot3 = 45 , Ingot4  = 45 , MithrilOrWeapon = "Mithril" , MithrilOrWeaponAmount = 12, Osiris =8 , Wellwater=1 , Waterofworld = 5},
-                new CraftItems { Name = "Skeleton One-Hand Sword" , Category = "One-Handed" , Level  = "36"  , Ingot1 = 135, Ingot2 = 135 , Ingot3 = 135 , Ingot4  = 135 , MithrilOrWeapon = "Mithril " ,MithrilOrWeaponAmount = 38, Osiris =8 , Wellwater=4 , Waterofworld = 15},
+                new CraftItems { Name = "Skeleton One-Hand Sword" , Category = "One-Handed" , Level  = "36"  , Ingot1 = 135, Ingot2 = 135 , Ingot3 = 135 , Ingot4  = 135 , MithrilOrWeapon = "Mithril " ,MithrilOrWeaponAmount = 38, Osiris = 24 , Wellwater= 3 , Waterofworld = 15},
                 new CraftItems { Name = "Shortsword of the Ice-cold Murderer" , Category = "Dagger" , Level  = "38", Ingot1 = 75 , Ingot2 = 75 , Ingot3 = 75 , Ingot4 = 50 , MithrilOrWeapon = "Haylolien (Dungeon 79)" , MithrilOrWeaponAmount = 1 , Osiris = 20 , Wellwater = 5 , Waterofworld = 30},
                 new CraftItems { Name = "Emperor's Sword" , Category = "One-Handed" , Level  = "38" , Ingot1 = 225 , Ingot2 = 225 , Ingot3 = 225 , Ingot4 = 150 , MithrilOrWeapon = "Akanok (Dungeon 79)" , MithrilOrWeaponAmount = 1 , Osiris = 40 , Wellwater = 15 , Waterofworld = 90},
                 new CraftItems { Name = "Axe of the Immortal" , Category = "Axe" , Level  = "38" , Ingot1 = 300 , Ingot2 = 300 , Ingot3 = 300 , Ingot4 = 200 , MithrilOrWeapon = "Ensollaze (Dungeon 79)" , MithrilOrWeaponAmount = 1 , Osiris = 60 , Wellwater = 20 , Waterofworld = 120},
@@ -40,7 +40,7 @@ namespace _4Secret_Project
                 new CraftItems { Name = "Wand of the Tamed Magic" , Category = "Wand" , Level  = "38" , Ingot1 = 225 , Ingot2 = 225 , Ingot3 = 225 , Ingot4 = 150 , MithrilOrWeapon = "Touch of Intelligence (Dungeon 79)" , MithrilOrWeaponAmount = 1 , Osiris = 40 , Wellwater = 15 , Waterofworld = 90},
                 new CraftItems { Name = "Book of the Noble Spellpower" , Category = "Book" , Level  = "38", Ingot1 = 75 , Ingot2 = 75 , Ingot3 = 75 , Ingot4 = 50 , MithrilOrWeapon = "The Unfolding of Knowledge (Dungeon 79)" , MithrilOrWeaponAmount = 1 , Osiris = 20 , Wellwater = 5 , Waterofworld = 30},
                 new CraftItems { Name = "Magic Rod of the Perennial Magic" , Category = "Rod" , Level  = "38" , Ingot1 = 300 , Ingot2 = 300 , Ingot3 = 300 , Ingot4 = 200 , MithrilOrWeapon = "Appreciation of Perfection (Dungeon 79)" , MithrilOrWeaponAmount = 1 , Osiris = 60 , Wellwater = 20 , Waterofworld = 120},
-                
+
             };
             main = alap;
             InitializeComponent();
@@ -48,9 +48,11 @@ namespace _4Secret_Project
 
         public void Crafts_Load(object sender, EventArgs e)
         {
+            timer1.Start();
+            label3.Text = "Crafts are loading..";
 
 
-            Items();
+            
 
         }
 
@@ -144,7 +146,7 @@ namespace _4Secret_Project
                     }
                 }
                 ListaItems[i]._MithrilOrWeapon = lista[i].MithrilOrWeapon + " " + lista[i].MithrilOrWeaponAmount + " Piece";
-                
+
                 ListaItems[i]._Osiris = "Osiris Gemstone " + lista[i].Osiris + " Piece";
                 ListaItems[i]._Waterofworld = "Water of World " + lista[i].Waterofworld + " Piece";
                 ListaItems[i]._Wellwater = "Well Water " + lista[i].Wellwater + " Piece";
@@ -171,7 +173,7 @@ namespace _4Secret_Project
         {
 
         }
-        
+
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
@@ -314,6 +316,19 @@ namespace _4Secret_Project
         private void textBoxSearch_Leave(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            panelLoad2.Width += 35;
+
+            if (panelLoad2.Width >= panelLoad1.Width)
+            {
+                Items();
+                timer1.Stop();
+                panel1.Visible = false;
+            }
+           
         }
     }
 }

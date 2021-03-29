@@ -6,13 +6,16 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ChaseLabs.CLUpdate;
 using System.Windows.Forms;
+
 
 namespace _4Secret_Project
 {
     public partial class LOADING : Form
     {
         Form1 main;
+        
         public LOADING()
         {
             main = new Form1();
@@ -33,6 +36,7 @@ namespace _4Secret_Project
         private void LOADING_Load(object sender, EventArgs e)
         {
             timer1.Start();
+            
         }
     }
 }

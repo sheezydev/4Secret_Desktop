@@ -141,6 +141,12 @@ namespace _4Secret_Project
             this.button2 = new System.Windows.Forms.Button();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.labelLOAD = new System.Windows.Forms.Label();
+            this.panelLoad1 = new System.Windows.Forms.Panel();
+            this.panelLoad2 = new System.Windows.Forms.Panel();
+            this.label39 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panelPirate.SuspendLayout();
             this.panelMarduk.SuspendLayout();
@@ -176,6 +182,8 @@ namespace _4Secret_Project
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
             this.mainPirate.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            this.panel9.SuspendLayout();
+            this.panelLoad1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -727,9 +735,9 @@ namespace _4Secret_Project
             this.label34.CausesValidation = false;
             this.label34.Font = new System.Drawing.Font("Mephisto™", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
-            this.label34.Location = new System.Drawing.Point(768, 410);
+            this.label34.Location = new System.Drawing.Point(768, 392);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(148, 38);
+            this.label34.Size = new System.Drawing.Size(148, 72);
             this.label34.TabIndex = 48;
             this.label34.Text = "Quest EP (150%)";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -739,9 +747,9 @@ namespace _4Secret_Project
             this.label33.CausesValidation = false;
             this.label33.Font = new System.Drawing.Font("Mephisto™", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
-            this.label33.Location = new System.Drawing.Point(768, 343);
+            this.label33.Location = new System.Drawing.Point(768, 329);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(148, 38);
+            this.label33.Size = new System.Drawing.Size(148, 63);
             this.label33.TabIndex = 47;
             this.label33.Text = "Formula of Transformation";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -751,9 +759,9 @@ namespace _4Secret_Project
             this.label32.CausesValidation = false;
             this.label32.Font = new System.Drawing.Font("Mephisto™", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
-            this.label32.Location = new System.Drawing.Point(768, 273);
+            this.label32.Location = new System.Drawing.Point(768, 262);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(148, 38);
+            this.label32.Size = new System.Drawing.Size(148, 59);
             this.label32.TabIndex = 46;
             this.label32.Text = "Magic Charm of Ease";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -763,9 +771,9 @@ namespace _4Secret_Project
             this.label31.CausesValidation = false;
             this.label31.Font = new System.Drawing.Font("Mephisto™", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
-            this.label31.Location = new System.Drawing.Point(555, 410);
+            this.label31.Location = new System.Drawing.Point(555, 392);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(164, 38);
+            this.label31.Size = new System.Drawing.Size(164, 72);
             this.label31.TabIndex = 45;
             this.label31.Text = "Arcane Reagent";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -775,9 +783,9 @@ namespace _4Secret_Project
             this.label30.CausesValidation = false;
             this.label30.Font = new System.Drawing.Font("Mephisto™", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
-            this.label30.Location = new System.Drawing.Point(555, 343);
+            this.label30.Location = new System.Drawing.Point(555, 329);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(164, 38);
+            this.label30.Size = new System.Drawing.Size(164, 63);
             this.label30.TabIndex = 44;
             this.label30.Text = "Alchemist\'s Formula";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -787,9 +795,9 @@ namespace _4Secret_Project
             this.label29.CausesValidation = false;
             this.label29.Font = new System.Drawing.Font("Mephisto™", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
-            this.label29.Location = new System.Drawing.Point(555, 273);
+            this.label29.Location = new System.Drawing.Point(555, 262);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(164, 38);
+            this.label29.Size = new System.Drawing.Size(164, 59);
             this.label29.TabIndex = 43;
             this.label29.Text = "Serendipity Potion (150%)";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -799,9 +807,9 @@ namespace _4Secret_Project
             this.label28.CausesValidation = false;
             this.label28.Font = new System.Drawing.Font("Mephisto™", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
-            this.label28.Location = new System.Drawing.Point(319, 410);
+            this.label28.Location = new System.Drawing.Point(319, 392);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(193, 38);
+            this.label28.Size = new System.Drawing.Size(193, 72);
             this.label28.TabIndex = 42;
             this.label28.Text = "Book of Craftsmanship";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -811,9 +819,9 @@ namespace _4Secret_Project
             this.label27.CausesValidation = false;
             this.label27.Font = new System.Drawing.Font("Mephisto™", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
-            this.label27.Location = new System.Drawing.Point(313, 343);
+            this.label27.Location = new System.Drawing.Point(313, 329);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(193, 38);
+            this.label27.Size = new System.Drawing.Size(193, 63);
             this.label27.TabIndex = 41;
             this.label27.Text = "Book of Inspiration";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -823,9 +831,9 @@ namespace _4Secret_Project
             this.label25.CausesValidation = false;
             this.label25.Font = new System.Drawing.Font("Mephisto™", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
-            this.label25.Location = new System.Drawing.Point(318, 273);
+            this.label25.Location = new System.Drawing.Point(318, 262);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(193, 38);
+            this.label25.Size = new System.Drawing.Size(193, 59);
             this.label25.TabIndex = 40;
             this.label25.Text = "Scroll of Reflection";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -835,9 +843,9 @@ namespace _4Secret_Project
             this.label24.CausesValidation = false;
             this.label24.Font = new System.Drawing.Font("Mephisto™", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
-            this.label24.Location = new System.Drawing.Point(74, 413);
+            this.label24.Location = new System.Drawing.Point(74, 395);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(193, 38);
+            this.label24.Size = new System.Drawing.Size(193, 73);
             this.label24.TabIndex = 39;
             this.label24.Text = "Master\'s Formula";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -847,9 +855,9 @@ namespace _4Secret_Project
             this.label23.CausesValidation = false;
             this.label23.Font = new System.Drawing.Font("Mephisto™", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
-            this.label23.Location = new System.Drawing.Point(74, 342);
+            this.label23.Location = new System.Drawing.Point(74, 329);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(193, 38);
+            this.label23.Size = new System.Drawing.Size(193, 58);
             this.label23.TabIndex = 38;
             this.label23.Text = "Serendipity Potion (100%)";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -859,9 +867,9 @@ namespace _4Secret_Project
             this.label21.CausesValidation = false;
             this.label21.Font = new System.Drawing.Font("Mephisto™", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
-            this.label21.Location = new System.Drawing.Point(74, 273);
+            this.label21.Location = new System.Drawing.Point(74, 262);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(193, 38);
+            this.label21.Size = new System.Drawing.Size(193, 59);
             this.label21.TabIndex = 37;
             this.label21.Text = "Cleansing Formula";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1226,7 +1234,7 @@ namespace _4Secret_Project
             this.mainMarduk.Controls.Add(this.button3);
             this.mainMarduk.Controls.Add(this.label54);
             this.mainMarduk.Controls.Add(this.label55);
-            this.mainMarduk.Location = new System.Drawing.Point(35, 31);
+            this.mainMarduk.Location = new System.Drawing.Point(34, 31);
             this.mainMarduk.Name = "mainMarduk";
             this.mainMarduk.Size = new System.Drawing.Size(942, 523);
             this.mainMarduk.TabIndex = 51;
@@ -1489,13 +1497,67 @@ namespace _4Secret_Project
             this.label44.TabIndex = 0;
             this.label44.Text = "DUNGEON";
             // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.labelLOAD);
+            this.panel9.Controls.Add(this.panelLoad1);
+            this.panel9.Controls.Add(this.label39);
+            this.panel9.Location = new System.Drawing.Point(-1, -1);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1013, 577);
+            this.panel9.TabIndex = 52;
+            // 
+            // labelLOAD
+            // 
+            this.labelLOAD.Font = new System.Drawing.Font("Mephisto™", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLOAD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
+            this.labelLOAD.Location = new System.Drawing.Point(3, 349);
+            this.labelLOAD.Name = "labelLOAD";
+            this.labelLOAD.Size = new System.Drawing.Size(1021, 23);
+            this.labelLOAD.TabIndex = 2;
+            this.labelLOAD.Text = "Farm possibilites are loading...";
+            this.labelLOAD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelLoad1
+            // 
+            this.panelLoad1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelLoad1.Controls.Add(this.panelLoad2);
+            this.panelLoad1.Location = new System.Drawing.Point(98, 381);
+            this.panelLoad1.Name = "panelLoad1";
+            this.panelLoad1.Size = new System.Drawing.Size(837, 25);
+            this.panelLoad1.TabIndex = 1;
+            // 
+            // panelLoad2
+            // 
+            this.panelLoad2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
+            this.panelLoad2.Location = new System.Drawing.Point(0, 0);
+            this.panelLoad2.Name = "panelLoad2";
+            this.panelLoad2.Size = new System.Drawing.Size(31, 25);
+            this.panelLoad2.TabIndex = 2;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Mephisto™", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
+            this.label39.Location = new System.Drawing.Point(463, 165);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(118, 24);
+            this.label39.TabIndex = 0;
+            this.label39.Text = "LOADING...";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 60;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FarmPoss
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(28)))), ((int)(((byte)(25)))));
-            this.BackgroundImage = global::_4Secret_Project.Properties.Resources.jumbo;
             this.ClientSize = new System.Drawing.Size(1013, 576);
+            this.Controls.Add(this.panel9);
             this.Controls.Add(this.mainPirate);
             this.Controls.Add(this.mainMarduk);
             this.Controls.Add(this.mainTigerasDung);
@@ -1551,6 +1613,9 @@ namespace _4Secret_Project
             this.mainPirate.ResumeLayout(false);
             this.mainPirate.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panelLoad1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1667,5 +1732,11 @@ namespace _4Secret_Project
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label labelLOAD;
+        public System.Windows.Forms.Panel panelLoad1;
+        public System.Windows.Forms.Panel panelLoad2;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Timer timer1;
     }
 }

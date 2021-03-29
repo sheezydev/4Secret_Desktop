@@ -694,7 +694,6 @@ namespace _4Secret_Project
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(28)))), ((int)(((byte)(25)))));
-            this.BackgroundImage = global::_4Secret_Project.Properties.Resources.jumbo2;
             this.ClientSize = new System.Drawing.Size(1013, 576);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panelBG);

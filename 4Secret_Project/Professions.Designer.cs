@@ -142,6 +142,12 @@ namespace _4Secret_Project
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.labelLOAD = new System.Windows.Forms.Label();
+            this.panelLoad1 = new System.Windows.Forms.Panel();
+            this.panelLoad2 = new System.Windows.Forms.Panel();
+            this.label43 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -190,6 +196,8 @@ namespace _4Secret_Project
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).BeginInit();
             this.panelALCHEMIST.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
+            this.panel9.SuspendLayout();
+            this.panelLoad1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -1258,9 +1266,9 @@ namespace _4Secret_Project
             this.label48.Font = new System.Drawing.Font("Mephisto™", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
             this.label48.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label48.Location = new System.Drawing.Point(487, 402);
+            this.label48.Location = new System.Drawing.Point(468, 402);
             this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(116, 47);
+            this.label48.Size = new System.Drawing.Size(158, 47);
             this.label48.TabIndex = 5;
             this.label48.Text = "HAMMER";
             this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1415,12 +1423,67 @@ namespace _4Secret_Project
             this.label41.Text = "Alchemist";
             this.label41.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 60;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.labelLOAD);
+            this.panel9.Controls.Add(this.panelLoad1);
+            this.panel9.Controls.Add(this.label43);
+            this.panel9.Location = new System.Drawing.Point(3, 2);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1009, 569);
+            this.panel9.TabIndex = 35;
+            // 
+            // labelLOAD
+            // 
+            this.labelLOAD.Font = new System.Drawing.Font("Mephisto™", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLOAD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
+            this.labelLOAD.Location = new System.Drawing.Point(3, 349);
+            this.labelLOAD.Name = "labelLOAD";
+            this.labelLOAD.Size = new System.Drawing.Size(1021, 23);
+            this.labelLOAD.TabIndex = 2;
+            this.labelLOAD.Text = "Professions are loading...";
+            this.labelLOAD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelLoad1
+            // 
+            this.panelLoad1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelLoad1.Controls.Add(this.panelLoad2);
+            this.panelLoad1.Location = new System.Drawing.Point(98, 381);
+            this.panelLoad1.Name = "panelLoad1";
+            this.panelLoad1.Size = new System.Drawing.Size(837, 25);
+            this.panelLoad1.TabIndex = 1;
+            // 
+            // panelLoad2
+            // 
+            this.panelLoad2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
+            this.panelLoad2.Location = new System.Drawing.Point(0, 0);
+            this.panelLoad2.Name = "panelLoad2";
+            this.panelLoad2.Size = new System.Drawing.Size(31, 25);
+            this.panelLoad2.TabIndex = 2;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Mephisto™", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
+            this.label43.Location = new System.Drawing.Point(463, 165);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(118, 24);
+            this.label43.TabIndex = 0;
+            this.label43.Text = "LOADING...";
+            // 
             // Professions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(28)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1013, 576);
+            this.Controls.Add(this.panel9);
             this.Controls.Add(this.panelALCHEMIST);
             this.Controls.Add(this.panelBLACKSMITH);
             this.Controls.Add(this.panelHERBALISM);
@@ -1432,6 +1495,7 @@ namespace _4Secret_Project
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Professions";
             this.Text = "Professions";
+            this.Load += new System.EventHandler(this.Professions_Load);
             this.panel1.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
@@ -1486,6 +1550,9 @@ namespace _4Secret_Project
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox51)).EndInit();
             this.panelALCHEMIST.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panelLoad1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1603,5 +1670,11 @@ namespace _4Secret_Project
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Label labelLOAD;
+        public System.Windows.Forms.Panel panelLoad1;
+        public System.Windows.Forms.Panel panelLoad2;
+        private System.Windows.Forms.Label label43;
     }
 }

@@ -29,11 +29,20 @@ namespace _4Secret_Project
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Crafts));
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.textBoxSearch = new Bunifu.Framework.UI.BunifuTextbox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panelLoad1 = new System.Windows.Forms.Panel();
+            this.panelLoad2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel1.SuspendLayout();
+            this.panelLoad1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -109,13 +118,67 @@ namespace _4Secret_Project
             this.textBoxSearch.Leave += new System.EventHandler(this.textBoxSearch_Leave);
             this.textBoxSearch.MouseEnter += new System.EventHandler(this.textBoxSearch_MouseEnter);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.panelLoad1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Location = new System.Drawing.Point(-4, -1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1027, 589);
+            this.panel1.TabIndex = 10;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Mephisto™", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
+            this.label3.Location = new System.Drawing.Point(3, 349);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(1021, 23);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "label3";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panelLoad1
+            // 
+            this.panelLoad1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelLoad1.Controls.Add(this.panelLoad2);
+            this.panelLoad1.Location = new System.Drawing.Point(98, 381);
+            this.panelLoad1.Name = "panelLoad1";
+            this.panelLoad1.Size = new System.Drawing.Size(837, 25);
+            this.panelLoad1.TabIndex = 1;
+            // 
+            // panelLoad2
+            // 
+            this.panelLoad2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
+            this.panelLoad2.Location = new System.Drawing.Point(0, 0);
+            this.panelLoad2.Name = "panelLoad2";
+            this.panelLoad2.Size = new System.Drawing.Size(31, 25);
+            this.panelLoad2.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Mephisto™", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
+            this.label2.Location = new System.Drawing.Point(463, 165);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 24);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "LOADING...";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 60;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Crafts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(28)))), ((int)(((byte)(25)))));
-            this.BackgroundImage = global::_4Secret_Project.Properties.Resources.jumbo1;
             this.ClientSize = new System.Drawing.Size(1024, 586);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.flowLayoutPanel1);
@@ -125,6 +188,9 @@ namespace _4Secret_Project
             this.Name = "Crafts";
             this.Text = "Crafts";
             this.Load += new System.EventHandler(this.Crafts_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panelLoad1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -135,5 +201,11 @@ namespace _4Secret_Project
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private Bunifu.Framework.UI.BunifuTextbox textBoxSearch;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timer1;
+        public System.Windows.Forms.Panel panelLoad1;
+        public System.Windows.Forms.Panel panelLoad2;
     }
 }

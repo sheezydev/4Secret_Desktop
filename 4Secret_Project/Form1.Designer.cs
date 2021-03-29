@@ -31,6 +31,8 @@ namespace _4Secret_Project
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.menuEvents = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,7 +53,6 @@ namespace _4Secret_Project
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,7 +63,8 @@ namespace _4Secret_Project
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(28)))), ((int)(((byte)(25)))));
-            this.panelMenu.Controls.Add(this.button1);
+            this.panelMenu.Controls.Add(this.label8);
+            this.panelMenu.Controls.Add(this.menuEvents);
             this.panelMenu.Controls.Add(this.label7);
             this.panelMenu.Controls.Add(this.label6);
             this.panelMenu.Controls.Add(this.label2);
@@ -77,6 +79,37 @@ namespace _4Secret_Project
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(256, 586);
             this.panelMenu.TabIndex = 0;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(28)))), ((int)(((byte)(25)))));
+            this.label8.Font = new System.Drawing.Font("Mephisto™", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
+            this.label8.Location = new System.Drawing.Point(3, 385);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(253, 77);
+            this.label8.TabIndex = 36;
+            this.label8.Text = "Beta version";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // menuEvents
+            // 
+            this.menuEvents.Dock = System.Windows.Forms.DockStyle.Top;
+            this.menuEvents.FlatAppearance.BorderSize = 0;
+            this.menuEvents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menuEvents.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.menuEvents.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
+            this.menuEvents.Image = ((System.Drawing.Image)(resources.GetObject("menuEvents.Image")));
+            this.menuEvents.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.menuEvents.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.menuEvents.Location = new System.Drawing.Point(0, 250);
+            this.menuEvents.Name = "menuEvents";
+            this.menuEvents.Size = new System.Drawing.Size(256, 60);
+            this.menuEvents.TabIndex = 35;
+            this.menuEvents.Text = "Events";
+            this.menuEvents.UseVisualStyleBackColor = true;
+            this.menuEvents.Click += new System.EventHandler(this.button1_Click);
             // 
             // label7
             // 
@@ -230,6 +263,7 @@ namespace _4Secret_Project
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel6
             // 
@@ -347,24 +381,6 @@ namespace _4Secret_Project
             this.label3.Text = "NEW ADVENTURES ARE WAITING FOR YOU!";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button1.Location = new System.Drawing.Point(0, 250);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(256, 60);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "Events";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -376,9 +392,12 @@ namespace _4Secret_Project
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(1280, 720);
+            this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "4Secret";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -412,7 +431,8 @@ namespace _4Secret_Project
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button menuEvents;
+        private System.Windows.Forms.Label label8;
     }
 }
 

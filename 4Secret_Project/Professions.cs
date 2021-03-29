@@ -65,5 +65,23 @@ namespace _4Secret_Project
         {
             panelBLACKSMITH.Visible = true;
         }
+
+        private void Professions_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+            panel9.BringToFront();
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            panelLoad2.Width += 35;
+
+            if (panelLoad2.Width >= panelLoad1.Width)
+            {
+                timer1.Stop();
+                panel9.Visible = false;
+            }
+        }
     }
 }
