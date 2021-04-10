@@ -288,7 +288,7 @@ namespace _4Secret_Project
 
         private async void Form1_Load(object sender, EventArgs e)
         {
-            AddFontResource(Path.GetFullPath(Path.Combine(Application.StartupPath, @"Image\MEPHISTO.TTF")));
+            AddFontResource(Path.GetFullPath(Path.Combine(Application.StartupPath, @"Font\MEPHISTO.TTF")));
 
             client = new FireSharp.FirebaseClient(config);
             if (client == null)
