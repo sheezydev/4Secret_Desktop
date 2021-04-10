@@ -9,6 +9,10 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
+
 
 namespace _4Secret_Project
 {
@@ -18,6 +22,13 @@ namespace _4Secret_Project
         private Point startpoint = new Point(0, 0);
         private Form activeForm;
         private Button currentButton;
+
+        IFirebaseConfig config = new FirebaseConfig
+        {
+            BasePath = "https://test-6295b-default-rtdb.europe-west1.firebasedatabase.app/",
+            AuthSecret = "ChHZAP8OX3LLIbei2osvlvcqyfYjVeXuWBAoth1F"
+        };
+        IFirebaseClient client;
         public Form1()
         {
             InitializeComponent();
@@ -275,9 +286,21 @@ namespace _4Secret_Project
         public static extern int AddFontResource([In][MarshalAs(UnmanagedType.LPWStr)]
                                          string lpFileName);
 
-        private void Form1_Load(object sender, EventArgs e)
+        private async void Form1_Load(object sender, EventArgs e)
         {
             AddFontResource(Path.GetFullPath(Path.Combine(Application.StartupPath, @"Image\MEPHISTO.TTF")));
+
+            client = new FireSharp.FirebaseClient(config);
+            if (client == null)
+            {
+                throw (new Exception("Database cannot connect"));
+            }
+
+            FirebaseResponse resp = await client.GetTaskAsync("Texts/version");
+            Texts version = resp.ResultAs<Texts>();
+
+
+            versionLabel.Text = "v" + version.text;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -291,6 +314,21 @@ namespace _4Secret_Project
                     frm.Hide();
                 }
             }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://discord.gg/q6K3TvM");
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.facebook.com/4Secret.net");
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.4secret.net/");
         }
     }
 }

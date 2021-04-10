@@ -115,21 +115,21 @@ namespace _4Secret_Project
             this.textBoxSearch.TabIndex = 8;
             this.textBoxSearch.text = "";
             this.textBoxSearch.KeyDown += new System.EventHandler(this.bunifuTextbox1_KeyDown);
-            this.textBoxSearch.Leave += new System.EventHandler(this.textBoxSearch_Leave);
-            this.textBoxSearch.MouseEnter += new System.EventHandler(this.textBoxSearch_MouseEnter);
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.panelLoad1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(-4, -1);
+            this.panel1.Location = new System.Drawing.Point(-2, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1027, 589);
             this.panel1.TabIndex = 10;
             // 
             // label3
             // 
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Mephisto™", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
             this.label3.Location = new System.Drawing.Point(3, 349);
@@ -159,6 +159,7 @@ namespace _4Secret_Project
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Mephisto™", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
             this.label2.Location = new System.Drawing.Point(463, 165);

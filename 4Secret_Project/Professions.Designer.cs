@@ -202,7 +202,7 @@ namespace _4Secret_Project
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::_4Secret_Project.Properties.Resources.MINEEEER;
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.buttonMINING);
             this.panel1.Controls.Add(this.panel8);
@@ -247,7 +247,7 @@ namespace _4Secret_Project
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = global::_4Secret_Project.Properties.Resources.HERBAAAALL;
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.buttonHERBAL);
             this.panel2.Controls.Add(this.panel7);
@@ -292,7 +292,7 @@ namespace _4Secret_Project
             // 
             // panel3
             // 
-            this.panel3.BackgroundImage = global::_4Secret_Project.Properties.Resources.ALCHEMYYYY;
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.buttonALCH);
             this.panel3.Controls.Add(this.panel6);
@@ -338,7 +338,7 @@ namespace _4Secret_Project
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.BackgroundImage = global::_4Secret_Project.Properties.Resources.BLACKSMITTTTTH;
+            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Controls.Add(this.buttonBLACKSMITH);
             this.panel4.Controls.Add(this.panel5);
@@ -600,7 +600,7 @@ namespace _4Secret_Project
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Image = global::_4Secret_Project.Properties.Resources.Hematite_Ingot;
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
             this.pictureBox10.Location = new System.Drawing.Point(778, 487);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(48, 47);
@@ -610,7 +610,7 @@ namespace _4Secret_Project
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Image = global::_4Secret_Project.Properties.Resources.Malachite_Ingot;
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
             this.pictureBox11.Location = new System.Drawing.Point(697, 487);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(48, 47);
@@ -620,7 +620,7 @@ namespace _4Secret_Project
             // 
             // pictureBox12
             // 
-            this.pictureBox12.Image = global::_4Secret_Project.Properties.Resources.Chalcopyrite_Ingot;
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
             this.pictureBox12.Location = new System.Drawing.Point(612, 487);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(48, 47);
@@ -630,7 +630,7 @@ namespace _4Secret_Project
             // 
             // pictureBox13
             // 
-            this.pictureBox13.Image = global::_4Secret_Project.Properties.Resources.Gold_Ingot;
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
             this.pictureBox13.Location = new System.Drawing.Point(528, 487);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(48, 47);
@@ -640,7 +640,7 @@ namespace _4Secret_Project
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Image = global::_4Secret_Project.Properties.Resources.Cobalt_Ingot;
+            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
             this.pictureBox14.Location = new System.Drawing.Point(442, 487);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(48, 47);
@@ -650,7 +650,7 @@ namespace _4Secret_Project
             // 
             // pictureBox15
             // 
-            this.pictureBox15.Image = global::_4Secret_Project.Properties.Resources.Silver_Ingot;
+            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
             this.pictureBox15.Location = new System.Drawing.Point(354, 487);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(48, 47);
@@ -660,7 +660,7 @@ namespace _4Secret_Project
             // 
             // pictureBox16
             // 
-            this.pictureBox16.Image = global::_4Secret_Project.Properties.Resources.Iron_Ingot;
+            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
             this.pictureBox16.Location = new System.Drawing.Point(266, 487);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(48, 47);
@@ -670,17 +670,17 @@ namespace _4Secret_Project
             // 
             // pictureBox17
             // 
-            this.pictureBox17.Image = global::_4Secret_Project.Properties.Resources.Copper_Ingot;
+            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
             this.pictureBox17.Location = new System.Drawing.Point(178, 487);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(48, 47);
+            this.pictureBox17.Size = new System.Drawing.Size(49, 47);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox17.TabIndex = 14;
             this.pictureBox17.TabStop = false;
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Image = global::_4Secret_Project.Properties.Resources.HEMATITEORES;
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.Location = new System.Drawing.Point(778, 402);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(48, 47);
@@ -690,7 +690,7 @@ namespace _4Secret_Project
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Image = global::_4Secret_Project.Properties.Resources.MALAORES;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(697, 402);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(48, 47);
@@ -700,7 +700,7 @@ namespace _4Secret_Project
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::_4Secret_Project.Properties.Resources.CHALCOORES;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(612, 402);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(48, 47);
@@ -710,7 +710,7 @@ namespace _4Secret_Project
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::_4Secret_Project.Properties.Resources.GOLDORES;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(528, 402);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(48, 47);
@@ -720,7 +720,7 @@ namespace _4Secret_Project
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::_4Secret_Project.Properties.Resources.COBALTORES;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(442, 402);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(48, 47);
@@ -730,7 +730,7 @@ namespace _4Secret_Project
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::_4Secret_Project.Properties.Resources.SILVERORES1;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(354, 402);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(48, 47);
@@ -740,7 +740,7 @@ namespace _4Secret_Project
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::_4Secret_Project.Properties.Resources.IRONORES;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(266, 402);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(48, 47);
@@ -750,7 +750,7 @@ namespace _4Secret_Project
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::_4Secret_Project.Properties.Resources.CopperORES;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(178, 402);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(48, 47);
@@ -772,11 +772,11 @@ namespace _4Secret_Project
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::_4Secret_Project.Properties.Resources.PICKAXEEEE;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(414, 304);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(48, 47);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -1008,7 +1008,7 @@ namespace _4Secret_Project
             // 
             // pictureBox18
             // 
-            this.pictureBox18.Image = global::_4Secret_Project.Properties.Resources.titannnnDUUST;
+            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
             this.pictureBox18.Location = new System.Drawing.Point(778, 487);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(48, 47);
@@ -1018,7 +1018,7 @@ namespace _4Secret_Project
             // 
             // pictureBox19
             // 
-            this.pictureBox19.Image = global::_4Secret_Project.Properties.Resources.campanulaaaDUUSt;
+            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
             this.pictureBox19.Location = new System.Drawing.Point(697, 487);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(48, 47);
@@ -1028,7 +1028,7 @@ namespace _4Secret_Project
             // 
             // pictureBox20
             // 
-            this.pictureBox20.Image = global::_4Secret_Project.Properties.Resources.purpleDUUST;
+            this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
             this.pictureBox20.Location = new System.Drawing.Point(612, 487);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(48, 47);
@@ -1038,7 +1038,7 @@ namespace _4Secret_Project
             // 
             // pictureBox21
             // 
-            this.pictureBox21.Image = global::_4Secret_Project.Properties.Resources.IRIIISISSSDUUSt;
+            this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
             this.pictureBox21.Location = new System.Drawing.Point(528, 487);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(48, 47);
@@ -1048,7 +1048,7 @@ namespace _4Secret_Project
             // 
             // pictureBox22
             // 
-            this.pictureBox22.Image = global::_4Secret_Project.Properties.Resources.zygoooASDASDASDAD;
+            this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
             this.pictureBox22.Location = new System.Drawing.Point(442, 487);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(48, 47);
@@ -1058,7 +1058,7 @@ namespace _4Secret_Project
             // 
             // pictureBox23
             // 
-            this.pictureBox23.Image = global::_4Secret_Project.Properties.Resources.globemallowwDUUSt;
+            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
             this.pictureBox23.Location = new System.Drawing.Point(354, 487);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(48, 47);
@@ -1068,7 +1068,7 @@ namespace _4Secret_Project
             // 
             // pictureBox24
             // 
-            this.pictureBox24.Image = global::_4Secret_Project.Properties.Resources.BLUEBELLSSSSSDUUST;
+            this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
             this.pictureBox24.Location = new System.Drawing.Point(266, 487);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(48, 47);
@@ -1078,7 +1078,7 @@ namespace _4Secret_Project
             // 
             // pictureBox25
             // 
-            this.pictureBox25.Image = global::_4Secret_Project.Properties.Resources.lobeliaaaaDUST;
+            this.pictureBox25.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox25.Image")));
             this.pictureBox25.Location = new System.Drawing.Point(178, 487);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(48, 47);
@@ -1088,7 +1088,7 @@ namespace _4Secret_Project
             // 
             // pictureBox26
             // 
-            this.pictureBox26.Image = global::_4Secret_Project.Properties.Resources.TITAN_ARUUUMM;
+            this.pictureBox26.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox26.Image")));
             this.pictureBox26.Location = new System.Drawing.Point(778, 402);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(48, 47);
@@ -1098,7 +1098,7 @@ namespace _4Secret_Project
             // 
             // pictureBox27
             // 
-            this.pictureBox27.Image = global::_4Secret_Project.Properties.Resources.CAMPANULAAA;
+            this.pictureBox27.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox27.Image")));
             this.pictureBox27.Location = new System.Drawing.Point(697, 402);
             this.pictureBox27.Name = "pictureBox27";
             this.pictureBox27.Size = new System.Drawing.Size(48, 47);
@@ -1108,7 +1108,7 @@ namespace _4Secret_Project
             // 
             // pictureBox28
             // 
-            this.pictureBox28.Image = global::_4Secret_Project.Properties.Resources.PURPLEEE_OXALISSSS;
+            this.pictureBox28.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox28.Image")));
             this.pictureBox28.Location = new System.Drawing.Point(612, 402);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(48, 47);
@@ -1118,7 +1118,7 @@ namespace _4Secret_Project
             // 
             // pictureBox29
             // 
-            this.pictureBox29.Image = global::_4Secret_Project.Properties.Resources.IRISSSSS;
+            this.pictureBox29.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox29.Image")));
             this.pictureBox29.Location = new System.Drawing.Point(528, 402);
             this.pictureBox29.Name = "pictureBox29";
             this.pictureBox29.Size = new System.Drawing.Size(48, 47);
@@ -1128,7 +1128,7 @@ namespace _4Secret_Project
             // 
             // pictureBox30
             // 
-            this.pictureBox30.Image = global::_4Secret_Project.Properties.Resources.zygopetalum_orchiddddd;
+            this.pictureBox30.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox30.Image")));
             this.pictureBox30.Location = new System.Drawing.Point(442, 402);
             this.pictureBox30.Name = "pictureBox30";
             this.pictureBox30.Size = new System.Drawing.Size(48, 47);
@@ -1138,7 +1138,7 @@ namespace _4Secret_Project
             // 
             // pictureBox31
             // 
-            this.pictureBox31.Image = global::_4Secret_Project.Properties.Resources.GLOBEMALLOOOOw;
+            this.pictureBox31.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox31.Image")));
             this.pictureBox31.Location = new System.Drawing.Point(354, 402);
             this.pictureBox31.Name = "pictureBox31";
             this.pictureBox31.Size = new System.Drawing.Size(48, 47);
@@ -1148,7 +1148,7 @@ namespace _4Secret_Project
             // 
             // pictureBox32
             // 
-            this.pictureBox32.Image = global::_4Secret_Project.Properties.Resources.BLUEBELLSSSSS;
+            this.pictureBox32.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox32.Image")));
             this.pictureBox32.Location = new System.Drawing.Point(266, 402);
             this.pictureBox32.Name = "pictureBox32";
             this.pictureBox32.Size = new System.Drawing.Size(48, 47);
@@ -1158,7 +1158,7 @@ namespace _4Secret_Project
             // 
             // pictureBox33
             // 
-            this.pictureBox33.Image = global::_4Secret_Project.Properties.Resources.LOBELIAAA;
+            this.pictureBox33.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox33.Image")));
             this.pictureBox33.Location = new System.Drawing.Point(178, 402);
             this.pictureBox33.Name = "pictureBox33";
             this.pictureBox33.Size = new System.Drawing.Size(48, 47);
@@ -1180,7 +1180,7 @@ namespace _4Secret_Project
             // 
             // pictureBox34
             // 
-            this.pictureBox34.Image = global::_4Secret_Project.Properties.Resources.SICKLEEEEE;
+            this.pictureBox34.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox34.Image")));
             this.pictureBox34.Location = new System.Drawing.Point(414, 304);
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.Size = new System.Drawing.Size(48, 47);
@@ -1275,7 +1275,7 @@ namespace _4Secret_Project
             // 
             // pictureBox51
             // 
-            this.pictureBox51.Image = global::_4Secret_Project.Properties.Resources.HAMMMEEER;
+            this.pictureBox51.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox51.Image")));
             this.pictureBox51.Location = new System.Drawing.Point(414, 402);
             this.pictureBox51.Name = "pictureBox51";
             this.pictureBox51.Size = new System.Drawing.Size(48, 47);
@@ -1370,11 +1370,11 @@ namespace _4Secret_Project
             // 
             // pictureBox35
             // 
-            this.pictureBox35.Image = global::_4Secret_Project.Properties.Resources.BOOOOOOOK;
+            this.pictureBox35.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox35.Image")));
             this.pictureBox35.Location = new System.Drawing.Point(414, 402);
             this.pictureBox35.Name = "pictureBox35";
             this.pictureBox35.Size = new System.Drawing.Size(48, 47);
-            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox35.TabIndex = 4;
             this.pictureBox35.TabStop = false;
             // 
@@ -1430,6 +1430,7 @@ namespace _4Secret_Project
             // 
             // panel9
             // 
+            this.panel9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel9.BackgroundImage")));
             this.panel9.Controls.Add(this.labelLOAD);
             this.panel9.Controls.Add(this.panelLoad1);
             this.panel9.Controls.Add(this.label43);
@@ -1440,6 +1441,7 @@ namespace _4Secret_Project
             // 
             // labelLOAD
             // 
+            this.labelLOAD.BackColor = System.Drawing.Color.Transparent;
             this.labelLOAD.Font = new System.Drawing.Font("Mephisto™", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLOAD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
             this.labelLOAD.Location = new System.Drawing.Point(3, 349);
@@ -1469,6 +1471,7 @@ namespace _4Secret_Project
             // label43
             // 
             this.label43.AutoSize = true;
+            this.label43.BackColor = System.Drawing.Color.Transparent;
             this.label43.Font = new System.Drawing.Font("Mephisto™", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
             this.label43.Location = new System.Drawing.Point(463, 165);

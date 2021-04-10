@@ -82,7 +82,6 @@ namespace _4Secret_Project
             this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelMAIN.SuspendLayout();
             this.panelBOW.SuspendLayout();
             this.panelBOWHELP.SuspendLayout();
@@ -122,20 +121,18 @@ namespace _4Secret_Project
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
             this.label1.Location = new System.Drawing.Point(6, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(948, 432);
+            this.label1.Size = new System.Drawing.Size(939, 432);
             this.label1.TabIndex = 0;
-            this.label1.Text = resources.GetString("label1.Text");
             // 
             // panelBOW
             // 
-            this.panelBOW.BackgroundImage = global::_4Secret_Project.Properties.Resources.BOWWWW;
+            this.panelBOW.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelBOW.BackgroundImage")));
             this.panelBOW.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelBOW.Controls.Add(this.panelBOWHELP);
             this.panelBOW.Location = new System.Drawing.Point(27, 57);
             this.panelBOW.Name = "panelBOW";
             this.panelBOW.Size = new System.Drawing.Size(945, 469);
             this.panelBOW.TabIndex = 2;
-            this.panelBOW.Visible = false;
             // 
             // panelBOWHELP
             // 
@@ -158,7 +155,7 @@ namespace _4Secret_Project
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(782, 29);
             this.label18.TabIndex = 6;
-            this.label18.Text = "To earn points you need to kill the statue at the Enemy Team\'s Base";
+            this.label18.Text = "To earn points you need to kill the Enemy players!";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label17
@@ -170,8 +167,8 @@ namespace _4Secret_Project
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(782, 44);
             this.label17.TabIndex = 5;
-            this.label17.Text = "When a team reach 10 points wins! If the time limit is over (45 minutes) that tea" +
-    "m wins which has more points!";
+            this.label17.Text = "When a team reach 500 points(kills) wins! If the time limit is over (45 minutes) " +
+    "that team wins which has more points!";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label16
@@ -207,19 +204,18 @@ namespace _4Secret_Project
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(782, 29);
             this.label14.TabIndex = 2;
-            this.label14.Text = "Battle of Worlds";
+            this.label14.Text = "DeathMatch";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panelISLAND
             // 
-            this.panelISLAND.BackgroundImage = global::_4Secret_Project.Properties.Resources.ISLANDDDDDDDDDDDDDDDDDDDDDDDDDDDDD;
+            this.panelISLAND.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelISLAND.BackgroundImage")));
             this.panelISLAND.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelISLAND.Controls.Add(this.panelISLANDHELP);
             this.panelISLAND.Location = new System.Drawing.Point(27, 57);
             this.panelISLAND.Name = "panelISLAND";
             this.panelISLAND.Size = new System.Drawing.Size(945, 469);
             this.panelISLAND.TabIndex = 4;
-            this.panelISLAND.Visible = false;
             // 
             // panelISLANDHELP
             // 
@@ -309,14 +305,13 @@ namespace _4Secret_Project
             // 
             // panelBR
             // 
-            this.panelBR.BackgroundImage = global::_4Secret_Project.Properties.Resources.BRRRRR1;
+            this.panelBR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelBR.BackgroundImage")));
             this.panelBR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelBR.Controls.Add(this.panelBRHELP);
             this.panelBR.Location = new System.Drawing.Point(27, 57);
             this.panelBR.Name = "panelBR";
             this.panelBR.Size = new System.Drawing.Size(945, 469);
             this.panelBR.TabIndex = 4;
-            this.panelBR.Visible = false;
             // 
             // panelBRHELP
             // 
@@ -415,7 +410,7 @@ namespace _4Secret_Project
             this.buttonBOW.Name = "buttonBOW";
             this.buttonBOW.Size = new System.Drawing.Size(161, 48);
             this.buttonBOW.TabIndex = 1;
-            this.buttonBOW.Text = "Battle of Worlds";
+            this.buttonBOW.Text = "DeathMatch";
             this.buttonBOW.UseVisualStyleBackColor = false;
             this.buttonBOW.Click += new System.EventHandler(this.buttonBOW_Click);
             // 
@@ -477,14 +472,13 @@ namespace _4Secret_Project
             // 
             // panelctf
             // 
-            this.panelctf.BackgroundImage = global::_4Secret_Project.Properties.Resources.CTFFFF;
+            this.panelctf.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelctf.BackgroundImage")));
             this.panelctf.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelctf.Controls.Add(this.panelCTFHELP);
             this.panelctf.Location = new System.Drawing.Point(27, 57);
             this.panelctf.Name = "panelctf";
             this.panelctf.Size = new System.Drawing.Size(945, 469);
             this.panelctf.TabIndex = 0;
-            this.panelctf.Visible = false;
             // 
             // panelCTFHELP
             // 
@@ -562,14 +556,13 @@ namespace _4Secret_Project
             // 
             // panelBG
             // 
-            this.panelBG.BackgroundImage = global::_4Secret_Project.Properties.Resources.BGGGGGGGGGG;
+            this.panelBG.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelBG.BackgroundImage")));
             this.panelBG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelBG.Controls.Add(this.panelBGHELP);
             this.panelBG.Location = new System.Drawing.Point(27, 57);
             this.panelBG.Name = "panelBG";
             this.panelBG.Size = new System.Drawing.Size(945, 469);
             this.panelBG.TabIndex = 3;
-            this.panelBG.Visible = false;
             // 
             // panelBGHELP
             // 
@@ -590,7 +583,7 @@ namespace _4Secret_Project
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
             this.label13.Location = new System.Drawing.Point(-3, 265);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(785, 44);
+            this.label13.Size = new System.Drawing.Size(785, 71);
             this.label13.TabIndex = 5;
             this.label13.Text = "There is no time limit on this gamemode! The team which destroys 2x Titans first " +
     "wins!";
@@ -603,7 +596,7 @@ namespace _4Secret_Project
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(199)))), ((int)(((byte)(96)))));
             this.label12.Location = new System.Drawing.Point(0, 185);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(785, 44);
+            this.label12.Size = new System.Drawing.Size(785, 65);
             this.label12.TabIndex = 4;
             this.label12.Text = "In this mode you need to level up your character and increase your items to fight" +
     " against the enemy team!";
@@ -684,11 +677,6 @@ namespace _4Secret_Project
             this.bunifuElipse5.ElipseRadius = 30;
             this.bunifuElipse5.TargetControl = this.panelISLANDHELP;
             // 
-            // bunifuElipse6
-            // 
-            this.bunifuElipse6.ElipseRadius = 30;
-            this.bunifuElipse6.TargetControl = this.panelMAIN;
-            // 
             // Battlemodes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -696,17 +684,17 @@ namespace _4Secret_Project
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(28)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(1013, 576);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.panelBG);
-            this.Controls.Add(this.panelctf);
-            this.Controls.Add(this.panelISLAND);
+            this.Controls.Add(this.panelMAIN);
             this.Controls.Add(this.panelBOW);
+            this.Controls.Add(this.panelISLAND);
+            this.Controls.Add(this.panelctf);
+            this.Controls.Add(this.panelBG);
             this.Controls.Add(this.panelBR);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonBG);
             this.Controls.Add(this.buttonBR);
             this.Controls.Add(this.buttonCTF);
             this.Controls.Add(this.buttonBOW);
-            this.Controls.Add(this.panelMAIN);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Battlemodes";
@@ -785,6 +773,5 @@ namespace _4Secret_Project
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse4;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse5;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse6;
     }
 }

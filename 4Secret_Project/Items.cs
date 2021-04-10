@@ -26,7 +26,7 @@ namespace _4Secret_Project
         private string _osiris;
         private string _wellwater;
         private string _mithrilOrWeapon;
-        private int _mitrilOrWeaponAmount;
+        private string _mitrilOrWeaponAmount;
         private string _ingot1;
         private string _ingot2;
         private string _ingot3;
@@ -55,7 +55,7 @@ namespace _4Secret_Project
         }
 
         [Category("Custom Props")]
-        public int _MitrilOrWeaponAmount
+        public string _MitrilOrWeaponAmount
         {
             get { return _mitrilOrWeaponAmount; }
             set { _mitrilOrWeaponAmount = value; labelMithrilOrWeapon.Text = Convert.ToString(value); }

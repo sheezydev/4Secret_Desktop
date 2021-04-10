@@ -69,7 +69,6 @@ namespace _4Secret_Project
             // 
             // panelDaily
             // 
-            this.panelDaily.BackgroundImage = global::_4Secret_Project.Properties.Resources.DailyEvents;
             this.panelDaily.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelDaily.Controls.Add(this.button2);
             this.panelDaily.Location = new System.Drawing.Point(13, 13);
@@ -93,7 +92,6 @@ namespace _4Secret_Project
             // 
             // panelWeekly
             // 
-            this.panelWeekly.BackgroundImage = global::_4Secret_Project.Properties.Resources.WeeklyEvents;
             this.panelWeekly.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelWeekly.Controls.Add(this.button3);
             this.panelWeekly.Location = new System.Drawing.Point(13, 13);
@@ -128,6 +126,7 @@ namespace _4Secret_Project
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Events";
             this.Text = "Events";
+            this.Load += new System.EventHandler(this.Events_Load);
             this.panelDaily.ResumeLayout(false);
             this.panelWeekly.ResumeLayout(false);
             this.ResumeLayout(false);

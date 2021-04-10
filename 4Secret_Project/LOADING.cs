@@ -36,7 +36,6 @@ namespace _4Secret_Project
         private void LOADING_Load(object sender, EventArgs e)
         {
             timer1.Start();
-            
         }
     }
 }

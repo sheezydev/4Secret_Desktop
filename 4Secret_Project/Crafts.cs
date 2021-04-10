@@ -11,78 +11,98 @@ using System.Windows.Forms;
 using System.Resources;
 using System.IO;
 using System.Globalization;
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
 
 namespace _4Secret_Project
 {
     public partial class Crafts : Form
     {
         Form1 main;
-        List<CraftItems> lista;
-
+        
+        IFirebaseConfig config = new FirebaseConfig
+        {
+            BasePath = "https://test-6295b-default-rtdb.europe-west1.firebasedatabase.app/",
+            AuthSecret = "ChHZAP8OX3LLIbei2osvlvcqyfYjVeXuWBAoth1F"
+        };
+        IFirebaseClient client;
         public Crafts(Form1 alap)
         {
-            lista = new List<CraftItems>
-            {
-                new CraftItems { Name = "Ekim Orc Rod" , Category = "Rod" , Level  = "36" , Ingot1 = 180, Ingot2 = 180 , Ingot3 = 180 , Ingot4  = 180 , MithrilOrWeapon = "Mithril" , MithrilOrWeaponAmount = 50, Osiris =32 , Wellwater=4 , Waterofworld = 20},
-                new CraftItems { Name = "Book of Shadows" , Category = "Book" , Level  = "36"  , Ingot1 = 45, Ingot2 = 45 , Ingot3 = 45 , Ingot4  = 45 , MithrilOrWeapon = "Mithril" , MithrilOrWeaponAmount = 12, Osiris =8 , Wellwater=1 , Waterofworld = 5},
-                new CraftItems { Name = "Succubus Queen's Wand" , Category = "Wand" , Level  = "36"  , Ingot1 = 135, Ingot2 = 135 , Ingot3 = 135 , Ingot4  = 135 , MithrilOrWeapon = "Mithril" ,MithrilOrWeaponAmount = 38, Osiris =24 , Wellwater=4 , Waterofworld = 15},
-                new CraftItems { Name = "Lapiris' Mercy" , Category = "Crossbow" , Level  = "36"  , Ingot1 = 180, Ingot2 = 180 , Ingot3 = 180 , Ingot4  = 180 , MithrilOrWeapon = "Mithril" ,MithrilOrWeaponAmount = 50, Osiris =32 , Wellwater=4 , Waterofworld = 20},
-                new CraftItems { Name = "Little Muray's Two-Handed Hammer" , Category = "Axe" , Level = "36", Ingot1 = 180, Ingot2 = 180 , Ingot3 = 180 , Ingot4  = 180 , MithrilOrWeapon = "Mithril" , MithrilOrWeaponAmount = 50, Osiris =32 , Wellwater=4 , Waterofworld = 20},
-                new CraftItems { Name = "Night Bringer" , Category = "Chakram" , Level  = "36"  , Ingot1 = 180, Ingot2 = 180 , Ingot3 = 180 , Ingot4  = 180 , MithrilOrWeapon = "Mithril" , MithrilOrWeaponAmount = 50, Osiris =32 , Wellwater=4 , Waterofworld = 20},
-                new CraftItems { Name = "Pirate's Shortsword" , Category = "Dagger" , Level  = "36"  , Ingot1 = 45, Ingot2 = 45 , Ingot3 = 45 , Ingot4  = 45 , MithrilOrWeapon = "Mithril" , MithrilOrWeaponAmount = 12, Osiris =8 , Wellwater=1 , Waterofworld = 5},
-                new CraftItems { Name = "Shield of Shadows" , Category = "Shield" , Level  = "36"  , Ingot1 = 45, Ingot2 = 45 , Ingot3 = 45 , Ingot4  = 45 , MithrilOrWeapon = "Mithril" , MithrilOrWeaponAmount = 12, Osiris =8 , Wellwater=1 , Waterofworld = 5},
-                new CraftItems { Name = "Skeleton One-Hand Sword" , Category = "One-Handed" , Level  = "36"  , Ingot1 = 135, Ingot2 = 135 , Ingot3 = 135 , Ingot4  = 135 , MithrilOrWeapon = "Mithril " ,MithrilOrWeaponAmount = 38, Osiris = 24 , Wellwater= 3 , Waterofworld = 15},
-                new CraftItems { Name = "Shortsword of the Ice-cold Murderer" , Category = "Dagger" , Level  = "38", Ingot1 = 75 , Ingot2 = 75 , Ingot3 = 75 , Ingot4 = 50 , MithrilOrWeapon = "Haylolien (Dungeon 79)" , MithrilOrWeaponAmount = 1 , Osiris = 20 , Wellwater = 5 , Waterofworld = 30},
-                new CraftItems { Name = "Emperor's Sword" , Category = "One-Handed" , Level  = "38" , Ingot1 = 225 , Ingot2 = 225 , Ingot3 = 225 , Ingot4 = 150 , MithrilOrWeapon = "Akanok (Dungeon 79)" , MithrilOrWeaponAmount = 1 , Osiris = 40 , Wellwater = 15 , Waterofworld = 90},
-                new CraftItems { Name = "Axe of the Immortal" , Category = "Axe" , Level  = "38" , Ingot1 = 300 , Ingot2 = 300 , Ingot3 = 300 , Ingot4 = 200 , MithrilOrWeapon = "Ensollaze (Dungeon 79)" , MithrilOrWeaponAmount = 1 , Osiris = 60 , Wellwater = 20 , Waterofworld = 120},
-                new CraftItems { Name = "Crossbow of the Abyss" , Category = "Crossbow" , Level  = "38", Ingot1 = 300 , Ingot2 = 300 , Ingot3 = 300 , Ingot4 = 200 , MithrilOrWeapon = "Dark Visit (Dungeon 79)" , MithrilOrWeaponAmount = 1 , Osiris = 60 , Wellwater = 20 , Waterofworld = 120},
-                new CraftItems { Name = "King's Shield" , Category = "Shield" , Level  = "38", Ingot1 = 75 , Ingot2 = 75 , Ingot3 = 75 , Ingot4 = 50 , MithrilOrWeapon = "Anundedir (Dungeon 79)" , MithrilOrWeaponAmount = 1 , Osiris = 20 , Wellwater = 5 , Waterofworld = 30},
-                new CraftItems { Name = "Wand of the Tamed Magic" , Category = "Wand" , Level  = "38" , Ingot1 = 225 , Ingot2 = 225 , Ingot3 = 225 , Ingot4 = 150 , MithrilOrWeapon = "Touch of Intelligence (Dungeon 79)" , MithrilOrWeaponAmount = 1 , Osiris = 40 , Wellwater = 15 , Waterofworld = 90},
-                new CraftItems { Name = "Book of the Noble Spellpower" , Category = "Book" , Level  = "38", Ingot1 = 75 , Ingot2 = 75 , Ingot3 = 75 , Ingot4 = 50 , MithrilOrWeapon = "The Unfolding of Knowledge (Dungeon 79)" , MithrilOrWeaponAmount = 1 , Osiris = 20 , Wellwater = 5 , Waterofworld = 30},
-                new CraftItems { Name = "Magic Rod of the Perennial Magic" , Category = "Rod" , Level  = "38" , Ingot1 = 300 , Ingot2 = 300 , Ingot3 = 300 , Ingot4 = 200 , MithrilOrWeapon = "Appreciation of Perfection (Dungeon 79)" , MithrilOrWeaponAmount = 1 , Osiris = 60 , Wellwater = 20 , Waterofworld = 120},
 
-            };
             main = alap;
             InitializeComponent();
         }
-
+        
         public void Crafts_Load(object sender, EventArgs e)
         {
+
+
+
+            client = new FireSharp.FirebaseClient(config);
+            if (client == null)
+            {
+                throw (new Exception("Database cannot connect"));
+            }
+
+
             timer1.Start();
             label3.Text = "Crafts are loading..";
+            Items();
 
-
-            
 
         }
 
-        public void Items()
+        public static string ImageIntoBase64String(PictureBox pbox)
         {
+            MemoryStream ms = new MemoryStream();
+            pbox.Image.Save(ms, pbox.Image.RawFormat);
+            return Convert.ToBase64String(ms.ToArray());
+        }
+
+        public static Image Base64StringIntoImage(string str64)
+        {
+            byte[] img = Convert.FromBase64String(str64);
+            MemoryStream ms = new MemoryStream(img);
+            return Image.FromStream(ms);
+        }
 
 
-            Items[] ListaItems = new Items[lista.Count];
+        public async void Items()
+        {
+            FirebaseResponse resp = await client.GetTaskAsync("Counter/weapons");
+            nodeWeapon get = resp.ResultAs<nodeWeapon>();
 
-            for (int i = 0; i < lista.Count; i++)
+
+            Items[] ListaItems = new Items[Convert.ToInt32(get.count)];
+
+            int k = 1;
+            for (int i = 0; i < Convert.ToInt32(get.count); i++)
             {
-
-
+                FirebaseResponse resp2 = await client.GetTaskAsync("Weapons/" + k);
+                CraftItems obj2 = resp2.ResultAs<CraftItems>();
+                k++;
                 ListaItems[i] = new Items();
-                ListaItems[i]._Name = lista[i].Name;
-                ListaItems[i]._Category = lista[i].Category;
-                ListaItems[i]._Level = Convert.ToString(lista[i].Level);
+                ListaItems[i]._Name = obj2.Name;
+                ListaItems[i]._Category = obj2.Category;
+                ListaItems[i]._Level = obj2.Level;
+                var res = await client.GetTaskAsync("Images/" + ListaItems[i]._Name);
+                ImageModal data = res.ResultAs<ImageModal>();
+                ListaItems[i].pictureBox1.Image = Base64StringIntoImage(data.ImageString);
+
                 if (ListaItems[i]._Level == "36")
                 {
-                    ListaItems[i]._Ingot1 = "Copper Ingot " + lista[i].Ingot1 + " Piece";
-                    ListaItems[i]._Ingot2 = "Iron Ingot " + lista[i].Ingot2 + " Piece";
-                    ListaItems[i]._Ingot3 = "Silver Ingot " + lista[i].Ingot3 + " Piece";
-                    ListaItems[i]._Ingot4 = "Cobalt Ingot " + lista[i].Ingot4 + " Piece";
+                    ListaItems[i]._Ingot1 = "Copper Ingot " + Convert.ToString(obj2.Ingot1) + " Piece";
+                    ListaItems[i]._Ingot2 = "Iron Ingot " + Convert.ToString(obj2.Ingot2) + " Piece";
+                    ListaItems[i]._Ingot3 = "Silver Ingot " + Convert.ToString(obj2.Ingot3) + " Piece";
+                    ListaItems[i]._Ingot4 = "Cobalt Ingot " + Convert.ToString(obj2.Ingot4) + " Piece";
                 }
                 else
                 {
-                    ListaItems[i]._Ingot1 = "Gold Ingot " + lista[i].Ingot1 + " Piece";
-                    ListaItems[i]._Ingot2 = "Chalcopyrite Ingot " + lista[i].Ingot2 + " Piece";
-                    ListaItems[i]._Ingot3 = "Malachite Ingot " + lista[i].Ingot3 + " Piece";
-                    ListaItems[i]._Ingot4 = "Hematite Ingot " + lista[i].Ingot4 + " Piece";
+                    ListaItems[i]._Ingot1 = "Gold Ingot " + Convert.ToString(obj2.Ingot1) + " Piece";
+                    ListaItems[i]._Ingot2 = "Chalcopyrite Ingot " + Convert.ToString(obj2.Ingot2) + " Piece";
+                    ListaItems[i]._Ingot3 = "Malachite Ingot " + Convert.ToString(obj2.Ingot3) + " Piece";
+                    ListaItems[i]._Ingot4 = "Hematite Ingot " + Convert.ToString(obj2.Ingot4) + " Piece";
                 }
 
                 if (ListaItems[i]._Level == "36" && (ListaItems[i]._Category == "Rod" || ListaItems[i]._Category == "Wand"))
@@ -145,17 +165,12 @@ namespace _4Secret_Project
                         }
                     }
                 }
-                ListaItems[i]._MithrilOrWeapon = lista[i].MithrilOrWeapon + " " + lista[i].MithrilOrWeaponAmount + " Piece";
+                ListaItems[i]._MithrilOrWeapon = obj2.MithrilOrWeapon + " " + obj2.MithrilOrWeaponAmount + " Piece";
 
-                ListaItems[i]._Osiris = "Osiris Gemstone " + lista[i].Osiris + " Piece";
-                ListaItems[i]._Waterofworld = "Water of World " + lista[i].Waterofworld + " Piece";
-                ListaItems[i]._Wellwater = "Well Water " + lista[i].Wellwater + " Piece";
-                string dirname = Path.GetFullPath(Path.Combine(Application.StartupPath, @"Image\"));
-                string filename = dirname + lista[i].Name + ".png";
-                using (Bitmap bm = new Bitmap(filename))
-                {
-                    ListaItems[i].pictureBox1.Image = (Bitmap)bm.Clone();
-                }
+                ListaItems[i]._Osiris = "Osiris Gemstone " + obj2.Osiris + " Piece";
+                ListaItems[i]._Waterofworld = "Water of World " + obj2.Waterofworld + " Piece";
+                ListaItems[i]._Wellwater = "Well Water " + obj2.Wellwater + " Piece";
+
 
                 if (flowLayoutPanel1.Controls.Count < 0)
                 {
@@ -174,12 +189,17 @@ namespace _4Secret_Project
 
         }
 
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        private async void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
 
 
-            Items[] ListaItemek = new Items[lista.Count];
+            FirebaseResponse resp = await client.GetTaskAsync("Counter/weapons");
+            nodeWeapon get = resp.ResultAs<nodeWeapon>();
+
+
+            
+
             if (textBoxSearch.text == "")
             {
                 MessageBox.Show("You did not search for nothing!");
@@ -191,30 +211,38 @@ namespace _4Secret_Project
             {
                 if (textBoxSearch.text != "")
                 {
-                    List<CraftItems> h = lista.Where(i => i.Name.Contains(textBoxSearch.text) || i.Name.ToLower().Contains(textBoxSearch.text.ToLower()) || i.Category.ToLower() == textBoxSearch.text.ToLower()).ToList();
-                    if (h.Count > 0)
+                    //List<CraftItems> h = lista.Where(i => i.Name.Contains(textBoxSearch.text) || i.Name.ToLower().Contains(textBoxSearch.text.ToLower()) || i.Category.ToLower() == textBoxSearch.text.ToLower()).ToList();
+                    Items[] ListaItems = new Items[Convert.ToInt32(get.count)];
+                    int counter = 0;
+                    int k = 1;
+                    for (int i = 0; i < Convert.ToInt32(get.count); i++)
                     {
-                        Items[] ListaItems = new Items[h.Count];
-                        for (int i = 0; i < h.Count; i++)
+                        FirebaseResponse resp2 = await client.GetTaskAsync("Weapons/" + k);
+                        CraftItems obj = resp2.ResultAs<CraftItems>();
+                        k++;
+                        if (obj.Name.Contains(textBoxSearch.text) || obj.Name.ToLower().Contains(textBoxSearch.text.ToLower()) || obj.Category.ToLower() == textBoxSearch.text.ToLower())
                         {
-
+                            counter++;
                             ListaItems[i] = new Items();
-                            ListaItems[i]._Name = h[i].Name;
-                            ListaItems[i]._Category = h[i].Category;
-                            ListaItems[i]._Level = Convert.ToString(h[i].Level);
+                            ListaItems[i]._Name = obj.Name;
+                            ListaItems[i]._Category = obj.Category;
+                            ListaItems[i]._Level = obj.Level;
+                            var res = await client.GetTaskAsync("Images/" + ListaItems[i]._Name);
+                            ImageModal data = res.ResultAs<ImageModal>();
+                            ListaItems[i].pictureBox1.Image = Base64StringIntoImage(data.ImageString);
                             if (ListaItems[i]._Level == "36")
                             {
-                                ListaItems[i]._Ingot1 = "Copper Ingot " + h[i].Ingot1 + " Piece";
-                                ListaItems[i]._Ingot2 = "Iron Ingot " + h[i].Ingot2 + " Piece";
-                                ListaItems[i]._Ingot3 = "Silver Ingot " + h[i].Ingot3 + " Piece";
-                                ListaItems[i]._Ingot4 = "Cobalt Ingot " + h[i].Ingot4 + " Piece";
+                                ListaItems[i]._Ingot1 = "Copper Ingot " + Convert.ToString(obj.Ingot1) + " Piece";
+                                ListaItems[i]._Ingot2 = "Iron Ingot " + Convert.ToString(obj.Ingot2) + " Piece";
+                                ListaItems[i]._Ingot3 = "Silver Ingot " + Convert.ToString(obj.Ingot3) + " Piece";
+                                ListaItems[i]._Ingot4 = "Cobalt Ingot " + Convert.ToString(obj.Ingot4) + " Piece";
                             }
                             else
                             {
-                                ListaItems[i]._Ingot1 = "Gold Ingot " + h[i].Ingot1 + " Piece";
-                                ListaItems[i]._Ingot2 = "Chalcopyrite Ingot " + h[i].Ingot2 + " Piece";
-                                ListaItems[i]._Ingot3 = "Malachite Ingot " + h[i].Ingot3 + " Piece";
-                                ListaItems[i]._Ingot4 = "Hematite Ingot " + h[i].Ingot4 + " Piece";
+                                ListaItems[i]._Ingot1 = "Gold Ingot " + Convert.ToString(obj.Ingot1) + " Piece";
+                                ListaItems[i]._Ingot2 = "Chalcopyrite Ingot " + Convert.ToString(obj.Ingot2) + " Piece";
+                                ListaItems[i]._Ingot3 = "Malachite Ingot " + Convert.ToString(obj.Ingot3) + " Piece";
+                                ListaItems[i]._Ingot4 = "Hematite Ingot " + Convert.ToString(obj.Ingot4) + " Piece";
                             }
 
                             if (ListaItems[i]._Level == "36" && (ListaItems[i]._Category == "Rod" || ListaItems[i]._Category == "Wand"))
@@ -277,17 +305,12 @@ namespace _4Secret_Project
                                     }
                                 }
                             }
-                            ListaItems[i]._MithrilOrWeapon = lista[i].MithrilOrWeapon + " " + lista[i].MithrilOrWeaponAmount + " Piece";
+                            ListaItems[i]._MithrilOrWeapon = obj.MithrilOrWeapon + " " + obj.MithrilOrWeaponAmount + " Piece";
 
-                            ListaItems[i]._Osiris = "Osiris Gemstone " + h[i].Osiris + " Piece";
-                            ListaItems[i]._Waterofworld = "Water of World " + h[i].Waterofworld + " Piece";
-                            ListaItems[i]._Wellwater = "Well Water " + h[i].Wellwater + " Piece";
-                            string dirname = Path.GetFullPath(Path.Combine(Application.StartupPath, @"Image\"));
-                            string filename = dirname + h[i].Name + ".png";
-                            using (Bitmap bm = new Bitmap(filename))
-                            {
-                                ListaItems[i].pictureBox1.Image = (Bitmap)bm.Clone();
-                            }
+                            ListaItems[i]._Osiris = "Osiris Gemstone " + obj.Osiris + " Piece";
+                            ListaItems[i]._Waterofworld = "Water of World " + obj.Waterofworld + " Piece";
+                            ListaItems[i]._Wellwater = "Well Water " + obj.Wellwater + " Piece";
+
 
                             if (flowLayoutPanel1.Controls.Count < 0)
                             {
@@ -298,8 +321,11 @@ namespace _4Secret_Project
                                 flowLayoutPanel1.Controls.Add(ListaItems[i]);
                             }
                         }
+                        
                     }
-                    else
+
+
+                    if(counter <= 0)
                     {
                         MessageBox.Show("We can't find nothing with this filter!");
                         Items();
@@ -308,15 +334,7 @@ namespace _4Secret_Project
             }
         }
 
-        private void textBoxSearch_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxSearch_Leave(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -324,11 +342,11 @@ namespace _4Secret_Project
 
             if (panelLoad2.Width >= panelLoad1.Width)
             {
-                Items();
+
                 timer1.Stop();
                 panel1.Visible = false;
             }
-           
+
         }
     }
 }
